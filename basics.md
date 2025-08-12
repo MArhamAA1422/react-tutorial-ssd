@@ -84,3 +84,9 @@ const div = (
     <button>Send</button>
 </>
 ```
+-components are designed to be reusable
+
+## Props
+- parameters in component (function)
+- object type
+- props = properties

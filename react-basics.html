@@ -16,10 +16,12 @@
 
     <script src="https://unpkg.com/supersimpledev/babel.js"></script>
     <script type="text/babel">
-        const div = <div>
-            <button>hello</button>
-            <p>some text</p>
-        </div>;
+        const div = (
+            <div>
+                <button>hello</button>
+                <p>some text {2 + 2}</p>
+            </div>
+        );
 
         const container = document.querySelector('.js-container');
         ReactDOM.createRoot(container).render(div);

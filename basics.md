@@ -46,3 +46,12 @@ ReactDOM.createRoot(container).render('Welcome');
 - our web browser doesn't understand JSX
 - need to translate JSX into JS
 - so, we use Babel External Library
+- we can insert JS code into JSX element
+
+```js
+const div = (
+    <div>
+        {2 + 3}
+    </div>
+);
+```

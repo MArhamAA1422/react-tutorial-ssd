@@ -1,5 +1,7 @@
 ## What is React?
 - external library that helps us create website easier
+- Main Idea of React
+    - we can create our own HTML elements
 
 ### External Library
 - code that is outside our computer
@@ -47,6 +49,9 @@ ReactDOM.createRoot(container).render('Welcome');
 - need to translate JSX into JS
 - so, we use Babel External Library
 - we can insert JS code into JSX element
+- JSX is more strict than normal HTML
+    - all elements need a closing tag
+    - `<input></input>`
 
 ```js
 const div = (
@@ -54,4 +59,28 @@ const div = (
         {2 + 3}
     </div>
 );
+```
+
+#### Self-closing element
+```html
+<!-- shortcut for <input></input> -->
+<input />
+```
+
+## Components
+- a piece of the website
+- the component name must start with a capital letter
+     - pascalCase
+- component syntax
+```js
+// ChatInput()
+<ChatInput></ChatInput>
+```
+- fragment (combining multiple elements)
+```js
+// instead of <div>
+<>
+    <input />
+    <button>Send</button>
+</>
 ```

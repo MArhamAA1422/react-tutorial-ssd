@@ -90,3 +90,10 @@ const div = (
 - parameters in component (function)
 - object type
 - props = properties
+- make our component reusable
+```js
+function ChatMessage(props) {
+    const message = props.message;
+    const sender = props.sender
+}
+```

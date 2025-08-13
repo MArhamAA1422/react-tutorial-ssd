@@ -54,7 +54,7 @@
             );
         }
 
-        function App() {
+        function ChatMessages() {
             const chatMessages = [{
                 message: 'hello chatbot',
                 sender: 'user',
@@ -73,9 +73,13 @@
                 id: 'id4'
             }];
 
+            function sendMessage() {
+                console.log('hello universe');
+            }
+
             return (
                 <>
-                    <ChatInput />
+                    <button onClick={sendMessage}>Send Message</button>
                     {
                         chatMessages.map((chatMessage) => {
                             return (
@@ -87,6 +91,15 @@
                             );
                         })
                     }
+                </>
+            );
+        }
+
+        function App() {
+            return (
+                <>
+                    <ChatInput />
+                    <ChatMessages />
                 </>
             );
         }

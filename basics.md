@@ -102,3 +102,6 @@ function ChatMessage(props) {
 ### key
 - helps React track changes in the array
 - another prop
+
+### Event Handlers
+- run a function when we interact with the website

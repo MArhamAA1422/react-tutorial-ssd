@@ -1,5 +1,6 @@
 ## What is React?
 - external library that helps us create website easier
+- it lets us work on a small piece of the website at a time
 - Main Idea of React
     - we can create our own HTML elements
 

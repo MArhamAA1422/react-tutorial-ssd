@@ -4,6 +4,12 @@
 - Main Idea of React
     - we can create our own HTML elements
 
+## React Best Practice
+- In React, we should not modify the data directly, we should always create a copy and then modify the copy.
+    - this helps React be more efficient
+- Do not use the DOM manually
+    - React is managing the website
+
 ### External Library
 - code that is outside our computer
 - code that someone else wrote
@@ -105,3 +111,34 @@ function ChatMessage(props) {
 
 ### Event Handlers
 - run a function when we interact with the website
+
+### Unique ID
+```js
+id: crypto.randomUUID()
+```
+
+## State
+- data that is connected to the HTML
+- when we update this data, it will update the HTML
+
+```js
+const array = React.useState([{
+    name: 'name',
+    age
+}]);
+const currentData = array[0];  // current data
+const setData = array[1];  // a function to update the data
+```
+
+### Spread Operator
+- ...arr
+- takes the values in an array, and copies them into a new array
+
+## Updater Function
+- if we update the data directly, React will not update the HTML
+- if we use function to update the data, React will update the HTML
+
+### Array Destructuring
+```js
+const [a, b] = array;
+```

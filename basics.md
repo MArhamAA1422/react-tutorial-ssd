@@ -98,3 +98,7 @@ function ChatMessage(props) {
     const sender = props.sender
 }
 ```
+
+### key
+- helps React track changes in the array
+- another prop

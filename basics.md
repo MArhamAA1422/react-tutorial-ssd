@@ -158,3 +158,6 @@ const setData = array[1];  // a function to update the data
 - components are like tree
 - we can share data from one component to other
 - share state between multiple components
+
+## Controlled Input
+- `value` attribute

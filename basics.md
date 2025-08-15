@@ -148,3 +148,13 @@ const setData = array[1];  // a function to update the data
 ## Updater Function
 - if we update the data directly, React will not update the HTML
 - if we use function to update the data, React will update the HTML
+
+## onChange
+- runs a function when we change the text inside an <input>
+- `event.target`
+    - gives us the element that we're typing in
+
+## Lifting the State Up
+- components are like tree
+- we can share data from one component to other
+- share state between multiple components

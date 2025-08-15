@@ -69,6 +69,7 @@ const div = (
 ```
 
 #### Self-closing element
+- no codes in between (open, close tags)
 ```html
 <!-- shortcut for <input></input> -->
 <input />
@@ -77,7 +78,7 @@ const div = (
 ## Components
 - a piece of the website
 - the component name must start with a capital letter
-     - pascalCase
+     - PascalCase
 - component syntax
 ```js
 // ChatInput()
@@ -104,18 +105,28 @@ function ChatMessage(props) {
     const sender = props.sender
 }
 ```
+```js
+// shortcut
+function ChatMessage({ message, sender }) {}
+```
 
-### key
+### Array Destructuring
+```js
+const [a, b] = array;
+```
+
+## Key
 - helps React track changes in the array
 - another prop
-
-### Event Handlers
-- run a function when we interact with the website
+- unique for each element
 
 ### Unique ID
 ```js
 id: crypto.randomUUID()
 ```
+
+### Event Handlers
+- run a function when we interact with the website
 
 ## State
 - data that is connected to the HTML
@@ -132,13 +143,8 @@ const setData = array[1];  // a function to update the data
 
 ### Spread Operator
 - ...arr
-- takes the values in an array, and copies them into a new array
+- takes the values from an array, and copies them into a new array
 
 ## Updater Function
 - if we update the data directly, React will not update the HTML
 - if we use function to update the data, React will update the HTML
-
-### Array Destructuring
-```js
-const [a, b] = array;
-```

@@ -14,47 +14,23 @@
     <script src="https://unpkg.com/supersimpledev/babel.js"></script>
 
     <script type="text/babel">
-        function Reset({ setCount }) {
-            function resetCounter() {
-                setCount(0);
-            }
-            return (
-                <button onClick={resetCounter}>
-                    Reset
-                </button>
-            );
-        }
-
-        function Counter({ count, setCount }) {
-            function clickEvent() {
-                setCount(count + 1);
-            }
-
-            return (
-                <button
-                    onClick={clickEvent}
-                >Clicked {count} {
-                        count === 1 ? "time" : "times"
-                    }
-                </button>
-            );
-        }
-
         function App() {
-            const [count, setCount] = React.useState(0);
+            const [inputText, setInputText] = React.useState('');
+            function showText(event) {
+                setInputText(event.target.value);
+            }
+            function resetInput() {
+                setInputText('');
+            }
+            function showExample() {
+                setInputText('example text');
+            }
             return (
                 <>
-                    <Counter
-                        count={count}
-                        setCount={setCount}
-                    />
-                    <Counter
-                        count={count}
-                        setCount={setCount}
-                    />
-                    <Reset
-                        setCount={setCount}
-                    />
+                    <input placeholder="Type a name here" onChange={showText} value={inputText} />
+                    <button onClick={resetInput}>Reset</button>
+                    <button onClick={showExample}>Example</button>
+                    <p>Hello {inputText}</p>
                 </>
             );
         }

@@ -3,6 +3,18 @@
 
 <head>
     <title>Chatbot</title>
+    <style>
+        .send-button {
+            background-color: rgb(25, 135, 84);
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 10px;
+            margin-left: 10px;
+            font-size: 15px;
+            cursor: pointer;
+        }
+    </style>
 </head>
 
 <body>
@@ -80,7 +92,7 @@
                         onKeyDown={saveInputTextByEnter}
                         value={inputText}
                     />
-                    <button
+                    <button className="send-button"
                         onClick={sendMessage}
                     >Send</button>
                 </>

@@ -171,3 +171,10 @@ setData(newData);
 
 ## Promise
 - a value that is not available yet, but will be available in the future
+
+## CSS with React
+- To set a class attribute
+    - React is JS code
+    - JS already has a feature called `class`
+    - `class` is a reserved word
+    - so we use `className`

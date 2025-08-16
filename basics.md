@@ -141,6 +141,10 @@ const currentData = array[0];  // current data
 const setData = array[1];  // a function to update the data
 ```
 
+```js
+setData(newData);
+```
+
 - state doesn't update immediately
 - state is updated after all of the code is finished
 

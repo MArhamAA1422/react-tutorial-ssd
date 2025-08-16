@@ -168,3 +168,6 @@ setData(newData);
 
 ## Controlled Input
 - `value` attribute
+
+## Promise
+- a value that is not available yet, but will be available in the future

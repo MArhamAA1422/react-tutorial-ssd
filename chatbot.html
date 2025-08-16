@@ -19,12 +19,23 @@
     <script type="text/babel">
         function ChatInput({ chatMessages, setChatMessages }) {
             const [inputText, setInputText] = React.useState('');
+            const [isLoading, setIsLoading] = React.useState(false);
 
             function saveInputText(event) {
                 setInputText(event.target.value);
             }
 
-            function sendMessage() {
+            function saveInputTextByEnter(event) {
+                if (event.key === 'Enter') {
+                    sendMessage();
+                }
+                if (event.key === 'Escape') {
+                    setInputText('');
+                }
+            }
+
+            async function sendMessage() {
+                if (inputText === '' || isLoading) return;
                 const newChatMessages = [
                     ...chatMessages,
                     {
@@ -35,8 +46,19 @@
                 ];
 
                 setChatMessages(newChatMessages);
+                setInputText('');
+                setIsLoading(true);
 
-                const response = Chatbot.getResponse(inputText);
+                setChatMessages([
+                    ...newChatMessages,
+                    {
+                        message: 'Loading...',
+                        sender: 'robot',
+                        id: crypto.randomUUID()
+                    }
+                ]);
+
+                const response = await Chatbot.getResponseAsync(inputText);
                 setChatMessages([
                     ...newChatMessages,
                     {
@@ -46,7 +68,7 @@
                     }
                 ]);
 
-                setInputText('');
+                setIsLoading(false);
             }
 
             return (
@@ -55,6 +77,7 @@
                         placeholder="Send a message to Chatbot"
                         size="30"
                         onChange={saveInputText}
+                        onKeyDown={saveInputTextByEnter}
                         value={inputText}
                     />
                     <button

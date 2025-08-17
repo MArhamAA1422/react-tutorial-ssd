@@ -178,3 +178,35 @@ setData(newData);
     - JS already has a feature called `class`
     - `class` is a reserved word
     - so we use `className`
+- vh = viewport height
+    - the height of the browser
+    - move something in the bottom of the page
+    - `100vh` = 100% of the height of the browser
+- To use Flexbox (or others similar)
+    - create container around elements
+- scrollable content
+```css
+overflow: scroll;
+```
+
+## Hooks
+- insert React features into our component
+- ```React.useState()``` is a hook
+- every hook starts with the word __use__
+    - React hooks `useState(), useEffect(), useRef()`
+- put hooks at the top of the component
+- hooks should not be inside anything: `if` `function`
+
+## useEffect
+- run some code after the component is crated or updated
+```js
+React.useEffect(() => {
+    console.log('updated');
+}, [chatMessages]);  // second parameter: dependency array
+```
+
+### Dependency array
+- control when useEffect runs
+- if empty: only run once, after the component is created
+- Best Practice
+    - give useEffect a dependency array to avoid running too often

@@ -184,12 +184,15 @@
         }
 
         function ChatMessages({ chatMessages }) {
+            const chatMessagesRef = React.useRef(null);
+
             React.useEffect(() => {
-                console.log('updated');
+                console.log(chatMessagesRef.current);
             }, [chatMessages]);
 
             return (
-                <div className="chat-messages-container">
+                <div className="chat-messages-container"
+                    ref={chatMessagesRef}>
                     {
                         chatMessages.map((chatMessage) => {
                             return (

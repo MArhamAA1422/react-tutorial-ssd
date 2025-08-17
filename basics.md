@@ -210,3 +210,8 @@ React.useEffect(() => {
 - if empty: only run once, after the component is created
 - Best Practice
     - give useEffect a dependency array to avoid running too often
+
+## useRef
+- automatically save an HTML element from the component
+- `ref`
+    - container with special React features

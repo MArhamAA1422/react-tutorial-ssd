@@ -215,3 +215,6 @@ React.useEffect(() => {
 - automatically save an HTML element from the component
 - `ref`
     - container with special React features
+
+### `var => containerElem` contains `Elem`
+    - so it means it contains HTML

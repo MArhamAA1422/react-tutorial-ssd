@@ -80,6 +80,11 @@
             overflow: scroll;
             scrollbar-width: none;
         }
+
+        .loading-spinner {
+            height: 40px;
+            margin: -15px;
+        }
     </style>
 </head>
 
@@ -130,7 +135,7 @@
                 setChatMessages([
                     ...newChatMessages,
                     {
-                        message: 'Loading...',
+                        message: <img src="images/loading-spinner.gif" className="loading-spinner" />,
                         sender: 'robot',
                         id: crypto.randomUUID()
                     }

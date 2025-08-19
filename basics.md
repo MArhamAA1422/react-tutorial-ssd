@@ -205,7 +205,7 @@ React.useEffect(() => {
 }, [chatMessages]);  // second parameter: dependency array
 ```
 
-### Dependency array
+## Dependency array
 - control when useEffect runs
 - if empty: only run once, after the component is created
 - Best Practice

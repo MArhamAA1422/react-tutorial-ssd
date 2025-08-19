@@ -244,3 +244,33 @@ function useAutoScroll(dependencies) {
     return containerRef;
 }
 ```
+
+## Command line
+- working directory
+- filepath
+- pwd: print working directory
+- node
+    - lets us run js code outside of a browser
+- npm
+    - lets us install external libraries (or packages) into our project
+- `crete-vite`
+    - package
+    - helps us set up a new React project
+    - to use: install + run
+        - `npx crete-vite@version`
+- `npm run dev`
+
+## React project setup with vite
+- __public__ folder
+    - contains files that should be available to the public
+    - we can access these using a URL
+- __eslint__
+    - highlights problems in our JS code
+- index.html
+    - main HTML code for the project
+- npm auto updates `package-lock.json`, `package.json`
+- __vite__
+    - a tool to setup the React project
+    - helps us build the website, loads JS, CSS into HTML
+    - vite also creates a server (a server puts our website at a URL)
+- Main focus: `index.html`, `src` folder

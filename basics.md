@@ -215,6 +215,13 @@ React.useEffect(() => {
 - automatically save an HTML element from the component
 - `ref`
     - container with special React features
+```js
+const chatMessagesRef = React.useRef(null);
+```
+```JSX
+<div className="chat-messages-container"
+    ref={chatMessagesRef}>
+```
 
 ### `var => containerElem` contains `Elem`
     - so it means it contains HTML

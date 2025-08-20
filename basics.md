@@ -268,6 +268,7 @@ function useAutoScroll(dependencies) {
 - __public__ folder
     - contains files that should be available to the public
     - we can access these using a URL
+    - src `images/`, then vite will look for this in public folder
 - __eslint__
     - highlights problems in our JS code
 - index.html

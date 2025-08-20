@@ -22,3 +22,10 @@
 .chat-message-profile {
     width: 45px;
 }
+
+.message-time {
+    color: rgb(125, 125, 125);
+    font-size: 14px;
+    margin: 0;
+    margin-top: 5px;
+}

@@ -283,6 +283,8 @@ function useAutoScroll(dependencies) {
 - `main.jsx`: sets up React
 - `<StrictMode>` = gives us some additional checks and warning when developing our app
 - anything in `components/` should be shared
+- multiple components
+    - group them together into a folder
 - Best Practice
     - Load external libraries from node_modules instead of using a <script> tag
 

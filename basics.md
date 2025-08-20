@@ -295,3 +295,30 @@ import { a, b } from src
 ```js
 import a from src
 ```
+
+## Routing
+- create multiple pages in React
+- routing lets us crate multiple pages using 1 HTML file
+- lets us reusing our HTML code
+- <Routes> tells React all the pages are in our website
+```jsx
+// main.jsx
+import { BrowserRouter } from 'react-router';
+<BrowserRouter>
+    <App />
+</BrowserRouter>
+```
+```jsx
+// App.jsx
+import { Routes, Route } from 'react-router';
+<Routes>
+    <Route path="/" element={<HomePage />} />
+</Routes>
+
+// instead of path="/" we can also write: index
+```
+
+## SPA
+- single page application
+- we only have 1 HTML file
+- we use React to create multiple pages

@@ -92,7 +92,7 @@ const div = (
     <button>Send</button>
 </>
 ```
--components are designed to be reusable
+- components are designed to be reusable
 
 ## Props
 - parameters in component (function)
@@ -149,7 +149,7 @@ setData(newData);
 - state is updated after all of the code is finished
 
 ### Spread Operator
-- ...arr
+- `...arr`
 - takes the values from an array, and copies them into a new array
 
 ## Updater Function
@@ -167,7 +167,7 @@ setData(newData);
 - share state between multiple components
 
 ## Controlled Input
-- `value` attribute
+- `value` attribute in HTML
 
 ## Promise
 - a value that is not available yet, but will be available in the future
@@ -186,6 +186,7 @@ setData(newData);
     - create container around elements
 - scrollable content
 ```css
+/* CSS */
 overflow: scroll;
 ```
 
@@ -195,7 +196,7 @@ overflow: scroll;
 - every hook starts with the word __use__
     - React hooks `useState(), useEffect(), useRef()`
 - put hooks at the top of the component
-- hooks should not be inside anything: `if` `function`
+- hooks should not be inside anything (block): `if` `function`
 
 ## useEffect
 - run some code after the component is crated or updated
@@ -210,21 +211,22 @@ React.useEffect(() => {
 - if empty: only run once, after the component is created
 - Best Practice
     - give useEffect a dependency array to avoid running too often
+    - at least `[]`
 
 ## useRef
 - automatically save an HTML element from the component
 - `ref`
     - container with special React features
 ```js
-const chatMessagesRef = React.useRef(null);
+const containerRef = React.useRef(null);
 ```
 ```JSX
-<div className="chat-messages-container"
-    ref={chatMessagesRef}>
+<div className="container"
+    ref={containerRef}>
 ```
 
-### `var => containerElem` contains `Elem`
-    - so it means it contains HTML
+### `containerElem` (variable) contains `Elem`
+- so it means it contains HTML
 
 ## Custom Hooks
 - inside a custom hook, we just use a combination of other hooks

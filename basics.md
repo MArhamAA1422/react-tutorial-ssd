@@ -273,4 +273,20 @@ function useAutoScroll(dependencies) {
     - a tool to setup the React project
     - helps us build the website, loads JS, CSS into HTML
     - vite also creates a server (a server puts our website at a URL)
+    - lets us import any type of file (CSS, img, external lib)
 - Main focus: `index.html`, `src` folder
+- `main.jsx`: sets up React
+- `<StrictMode>` = gives us some additional checks and warning when developing our app
+- Best Practice
+    - Load external libraries from node_modules instead of using a <script> tag
+
+## Export
+- named export
+```js
+import { a, b } from src
+```
+- default export
+    - at a time one item
+```js
+import a from src
+```

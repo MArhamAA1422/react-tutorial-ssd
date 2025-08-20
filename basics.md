@@ -322,3 +322,14 @@ import { Routes, Route } from 'react-router';
 - single page application
 - we only have 1 HTML file
 - we use React to create multiple pages
+
+## <Link>
+- go to another page without reloading
+    - faster, smooth
+- better alternative of <a> in HTML
+    - <a> reloads page each time
+```jsx
+import { Link } from 'react-router';
+<Link to="/"></Link>
+```
+- when using react-router use <Link>

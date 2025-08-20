@@ -260,6 +260,8 @@ function useAutoScroll(dependencies) {
     - helps us set up a new React project
     - to use: install + run
         - `npx crete-vite@version`
+- `npm install`
+    - set up node_modules
 - `npm run dev`
 
 ## React project setup with vite

@@ -1,0 +1,8 @@
+.page-not-found-text {
+    font-size: 24px;
+    color: rgb(180, 180, 180);
+    margin-top: 150px;
+    /* display: flex;
+    justify-content: center; */
+    text-align: center;
+}

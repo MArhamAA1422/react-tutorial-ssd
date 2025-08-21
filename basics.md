@@ -326,7 +326,7 @@ import { Routes, Route } from 'react-router';
 - we only have 1 HTML file
 - we use React to create multiple pages
 
-## <Link>
+## Link
 - go to another page without reloading
     - faster, smooth
 - better alternative of <a> in HTML
@@ -336,3 +336,14 @@ import { Link } from 'react-router';
 <Link to="/"></Link>
 ```
 - when using react-router use <Link>
+
+## NavLink
+- useful for navigation links (in header)
+- it knows which page is loaded
+- if we are in Orders page, it adds a class called __active__ to the Orders link (`className="orders-link ... active`)
+- we can then style
+```css
+.orders-link.active {
+    text-decoration: underline;
+}
+```

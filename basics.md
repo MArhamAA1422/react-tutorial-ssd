@@ -356,3 +356,7 @@ import { Link } from 'react-router';
 - share, store the data
 - `.json()` gives us the data attached to the response
 - `response.json()` is also asynchronous
+
+## axios
+- npm package
+- cleaner way to make request to the backend

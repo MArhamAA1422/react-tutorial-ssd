@@ -68,6 +68,10 @@ const div = (
 );
 ```
 
+```jsx
+<img src={`images/img-${value*10}`} />
+```
+
 #### Self-closing element
 - no codes in between (open, close tags)
 ```html

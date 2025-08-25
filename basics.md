@@ -362,3 +362,21 @@ import { Link } from 'react-router';
 ## axios
 - npm package
 - cleaner way to make request to the backend
+
+## server-proxy
+- vite.config.js
+```js
+server: {
+    proxy: {
+        '/api': {
+            target: 'http://localhost:3000'
+        }
+    }
+}
+```
+
+## base
+```html
+<!-- adds / in front of any relative URLs -->
+<base href="/" />
+```

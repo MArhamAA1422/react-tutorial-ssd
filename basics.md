@@ -351,3 +351,8 @@ import { Link } from 'react-router';
     text-decoration: underline;
 }
 ```
+
+## Backend
+- share, store the data
+- `.json()` gives us the data attached to the response
+- `response.json()` is also asynchronous

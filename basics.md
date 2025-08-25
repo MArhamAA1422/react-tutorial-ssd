@@ -358,6 +358,7 @@ import { Link } from 'react-router';
 - `response.json()` is also asynchronous
 - `/api` these URL paths are for interacting with the backend
 - <StrictMode> runs code twice (two output in useEffect)
+- backend does most of the necessary calculations
 
 ## axios
 - npm package

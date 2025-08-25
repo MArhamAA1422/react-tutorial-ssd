@@ -356,6 +356,8 @@ import { Link } from 'react-router';
 - share, store the data
 - `.json()` gives us the data attached to the response
 - `response.json()` is also asynchronous
+- `/api` these URL paths are for interacting with the backend
+- <StrictMode> runs code twice (two output in useEffect)
 
 ## axios
 - npm package

@@ -161,7 +161,7 @@ setData(newData);
 - if we use function to update the data, React will update the HTML
 
 ## onChange
-- runs a function when we change the text inside an <input>
+- runs a function when we change the text inside an `<input>`
 - `event.target`
     - gives us the element that we're typing in
 
@@ -307,7 +307,7 @@ import a from src
 - create multiple pages in React
 - routing lets us crate multiple pages using 1 HTML file
 - lets us reusing our HTML code
-- <Routes> tells React all the pages are in our website
+- `<Routes>` tells React all the pages are in our website
 ```jsx
 // main.jsx
 import { BrowserRouter } from 'react-router';
@@ -331,15 +331,15 @@ import { Routes, Route } from 'react-router';
 - we use React to create multiple pages
 
 ## Link
-- go to another page without reloading
+- go to another page **without reloading**
     - faster, smooth
-- better alternative of <a> in HTML
-    - <a> reloads page each time
+- better alternative of `<a>` in HTML
+    - `<a>` reloads page each time
 ```jsx
 import { Link } from 'react-router';
 <Link to="/"></Link>
 ```
-- when using react-router use <Link>
+- when using react-router use `<Link>`
 
 ## NavLink
 - useful for navigation links (in header)
@@ -357,7 +357,7 @@ import { Link } from 'react-router';
 - `.json()` gives us the data attached to the response
 - `response.json()` is also asynchronous
 - `/api` these URL paths are for interacting with the backend
-- <StrictMode> runs code twice (two output in useEffect)
+- `<StrictMode>` runs code twice (two output in useEffect)
 - backend does most of the necessary calculations
 
 ## axios
@@ -378,6 +378,6 @@ server: {
 
 ## base
 ```html
-<!-- adds / in front of any relative URLs -->
+<!-- adds '/' in front of any relative URLs -->
 <base href="/" />
 ```

@@ -366,6 +366,7 @@ import { Link } from 'react-router';
 
 ## server-proxy
 - vite.config.js
+- no need to write 'http://localhost:3000' each time, the URL path starts with '/api' the request will automatically goes to the target
 ```js
 server: {
     proxy: {

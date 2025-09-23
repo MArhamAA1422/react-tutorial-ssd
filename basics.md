@@ -121,7 +121,7 @@ const [a, b] = array;
 
 ## Key
 - helps React track changes in the array
-- another prop
+- another prop or HTML attribute
 - unique for each element
 
 ### Unique ID

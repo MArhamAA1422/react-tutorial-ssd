@@ -204,6 +204,8 @@ overflow: scroll;
 
 ## useEffect
 - run some code after the component is crated or updated
+- it shouldn't return any Promise
+    - `async` functions return promises, so put them inside another function inside
 ```js
 React.useEffect(() => {
     console.log('updated');
@@ -382,3 +384,5 @@ server: {
 <!-- adds '/' in front of any relative URLs -->
 <base href="/" />
 ```
+
+#### We should use `async await` with React

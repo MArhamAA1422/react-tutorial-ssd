@@ -73,7 +73,7 @@ export function OrdersPage({ cart }) {
                     </div>
 
                     <div className="product-actions">
-                      <Link to="/tracking">
+                      <Link to={`/tracking/${order.id}/${orderProduct.product.id}`}>
                         <button className="track-package-button button-secondary">
                           Track package
                         </button>
@@ -83,13 +83,13 @@ export function OrdersPage({ cart }) {
                   );
                 })}
 
-                <div className="product-actions">
+                {/* <div className="product-actions">
                   <Link to="/tracking">
                     <button className="track-package-button button-secondary">
                       Track package
                     </button>
                   </Link>
-                </div>
+                </div> */}
               </div>
             </div>
           );

@@ -279,6 +279,12 @@ function useAutoScroll(dependencies) {
 }
 ```
 
+## useNavigate
+```jsx
+const navigate = useNavigate();
+navigate('/orders');
+```
+
 ## Command line
 - working directory
 - filepath

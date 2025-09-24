@@ -395,5 +395,9 @@ To get these values out of the URL, we can use hook: `useParams` from react-rout
 ## Data Mutation
 Update data in the backend
 
+### 4 common types of requests
+- GET, POST, PUT, DELETE
+- TYPE + URL Path
+
 ### POST method
 `axios.post('URL', REQUEST_BODY_OBJECT)`

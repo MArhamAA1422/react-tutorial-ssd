@@ -387,10 +387,13 @@ server: {
 
 #### We should use `async await` with React
 
-## Data Mutation
-Update data in the backend
-
 ## URL parameters
 `tracking/:orderId/:productId`, we can replace them with any text.
 
 To get these values out of the URL, we can use hook: `useParams` from react-router.
+
+## Data Mutation
+Update data in the backend
+
+### POST method
+`axios.post('URL', REQUEST_BODY_OBJECT)`

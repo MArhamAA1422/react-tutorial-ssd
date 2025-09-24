@@ -280,6 +280,7 @@ function useAutoScroll(dependencies) {
 ```
 
 ## useNavigate
+- navigate to another page using our code
 ```jsx
 const navigate = useNavigate();
 navigate('/orders');

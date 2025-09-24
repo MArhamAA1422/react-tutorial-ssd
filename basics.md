@@ -72,6 +72,32 @@ const div = (
 <img src={`images/img-${value*10}`} />
 ```
 
+- JSX is often described as JavaScript + XML-like syntax.
+
+## XML
+- XML = Extensible Markup Language
+- It’s a markup language (like HTML), but its main purpose is storing and transporting data, not displaying it.
+- Looks like HTML, but the tags are custom (`<book>, <title>`).
+- It doesn’t define how data looks; it just describes what the data is.
+- Used in config files, APIs, SOAP, etc.
+
+## JSX Relation
+
+- JSX syntax looks like HTML/XML, but it’s not really XML.
+
+- React uses this XML-like syntax so you can write UI elements inside JavaScript.
+
+- After compilation (by Babel/TypeScript), it turns into pure JS
+
+```jsx
+const element = <h1>Hello, React!</h1>;
+```
+```jsx
+const element = React.createElement("h1", null, "Hello, React!");
+```
+
+So JSX borrows the “tag” style from XML/HTML, but underneath, **it’s just JavaScript function calls**.
+
 #### Self-closing element
 - no codes in between (open, close tags)
 ```html
